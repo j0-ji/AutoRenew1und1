@@ -6,7 +6,7 @@ import {test} from '@playwright/test';
 
 const url = process.env.URL || '';
 
-test.describe('Automatically book another GB', async () => {
+test('Automatically book another GB', async () => {
     const browser = await chromium.launch();
     const page = await browser.newPage();
 
@@ -20,6 +20,6 @@ test.describe('Automatically book another GB', async () => {
     await page.screenshot({ path: './screenshots/02_accept_cookies.png' });
 
     console.log('Step 3: get 1GB volume...');
-    await page.getByTestId('+1 GB').click({timeout: 10000});
+    await page.getByTestId('+1\u00A0GB').click({timeout: 10000});
     await page.screenshot({ path: './screenshots/03_get_volume.png' });
 });

@@ -1,0 +1,2 @@
+# Run every day at 9am
+*/5 * * * * /usr/local/bin/run-test.sh >> /var/log/cron.log 2>&1
