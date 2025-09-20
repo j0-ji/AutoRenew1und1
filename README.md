@@ -1,3 +1,9 @@
+# Short description
+This Docker container used playwright and cron to regularly check if an extra 1GB can be booked over a SMS link one gets over SMS when the mobile data volume was almost used up. Because the links are static and can still be used even when one gets another link, it is possible to set up this docker container once with a link and just regularly check if more GB can be booked.
+
+# Important
+Unfortunately this project does not work anymore like intended, because 1&1 added captchas to their 1GB booking process for the Unlimited on demand plans. Furthermore links one gets per SMS are invalidated after some time now.
+
 # Requirements
 - Docker
 
